@@ -28,6 +28,6 @@ $NameSpaceServers | %{
 }
 
 #Resetting Active Referral Namespace Server to as it was before test
+    Write-Host "`n`n`n`nResetting Active Referral Namespace Server to as it was before test"
     dfsutil cache referral flush
-    dfsutil client property state \\$domain\$root
     
