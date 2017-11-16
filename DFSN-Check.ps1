@@ -58,7 +58,7 @@ Write-Host "`n`n===================================`nChecking Share Accessibilit
   
    $TargetShares | %{
 
-   $UNC = "\\thbkkx600.vcn.ds.volvo.net\hm0221$"
+   $UNC = $_
    $targetDirCount = 0
     try{
         $targetDirCount = ls $UNC -ErrorAction Stop| Measure-Object | select -ExpandProperty count
